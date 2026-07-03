@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de notas</title>
 </head>
 <body>
+
     <h2>Cadastro de Alunos</h2>
 
-        <!-- Mesma lógica do escreva e leia no Pseudocódigo -->
+    
     <div>
         <label>Nome do Aluno:</label>
         <input type="text" id="nomealuno">
-    
+
     </div>
+    
     <div>
         <label>Nota 1:</label>
         <input type="number" id="nota1">
@@ -25,10 +27,18 @@
     </div>
 
     <button onclick="cadastraraluno()">Cadastrar Aluno</button>
-    <!-- Cria um botão na página -->
 
     <hr>
-    <h3>Resultado do Aluno cadastrado</h3>
+    <h3>Último Aluno Cadastrado:</h3>
     <p id="resultadoaluno">Nenhum aluno cadastrado ainda.</p>
+
+    <hr>
+    <h3>Histórico da Turma:</h3>
+    <div id="listaAlunos">Nenhum histórico disponível.</div>
+
+    <hr>
+    <p id="mediaGeral">Média geral da turma: 0.0</p>
+
     <script src="main.js"></script>
-</html>
+</body>
+<html>
